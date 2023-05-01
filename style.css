@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    box-sizing: border-box;
+
+}
+.contanier{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(2, 1, 15, 0.65),rgba(8, 7, 17, 0.65)),url(nasa.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 5px 8%;
+    
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.logo{
+    width: 140px;
+    cursor: pointer;
+}
+
+nav ul{
+  list-style: none;  
+  width: 100%;
+  text-align: right;
+  padding-right: 60px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.active, nav ul li:hover{
+    box-shadow: 8px 8px 15px rgba(116, 86, 86, 0.89);
+    border-radius: 3px;
+    background-color:rgba(110, 99, 99, 0.89) 
+}
+nav ul .icon{
+    margin-right: 8px;
+    margin-top: 4px;
+    height: 15px;
+}
+
+
+.btn{
+    display: flex; 
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    background-color: rgb(156, 194, 226);
+    color:rgb(48, 46, 46);
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn img{
+    width: 20px;
+    margin-right: 10px;
+}
+.content{
+    margin-top: 14%;
+    color: aliceblue;
+    max-width: 620px;
+}
+.content h1{
+font-size: 40px;
+font-weight: 400;
+line-height: 85px;
+margin-bottom: 25px;
+}
+.content form{
+    display: flex;
+    align-items: center;
+    background:#fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 30px;
+}
+.content form input{
+    border: 0;
+    outline: 0;
+    width: 100%;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.content form .btn{
+font-size: 15px;
+padding: 10px 30px;
+}
+.sub-menu-1{
+    display: none;
+}
+nav ul li:hover .sub-menu-1{
+    display:inline-block;
+    position: absolute;
+    background: rgba(130, 117, 155, 0.534);
+    margin-top:19px ;
+    margin-left: -8px;
+}
+nav ul li:hover .sub-menu-1 ul{
+    display: inline-block;
+    margin: 10px;
+}
+nav ul li:hover .sub-menu-1 ul li{
+    background: transparent;
+    border-radius: 0;
+}
+nav ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
